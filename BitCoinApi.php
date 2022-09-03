@@ -42,13 +42,10 @@
 	curl_close($ch);
 	$result=json_decode($result,true);
 
-	//echo "<pre>";
-	//print_r($result['data'][0]['symbol']);
 	$data = $result['data'];
 	echo "<pre>";
-	//print_r($data);
-						
 ?>
+
 <table class="table">
 	<thead class="thead-dark">
 	    <tr>
@@ -73,8 +70,6 @@
 				
 				</tr>";
 			$i++;
-			// echo "<pre>";
-			// print_r($list['id']);
 		}
 
 	?>
